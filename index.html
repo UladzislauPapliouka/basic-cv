@@ -3,77 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <title>Uladzislau CV</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img height="256px" src="./avatar.png" alt="There is my photo" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img class="avatar" src="./avatar.png" alt="There is my photo" />
+        <div class="info-text">
           <h1>Uladzislau Papliouka</h1>
-          <p><em>I`m Junior Front-end developer</em></p>
+          <p>I`m Junior Front-end developer</p>
           <p>I love playing games, basketball and <strong>codding</strong></p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2>My social networks</h2>
-    <ul>
-      <li>
-        <a target="_blank" href="https://instagram.com/etozhewil">Instagram</a>
-      </li>
-      <li><a target="_blank" href="https://t.me/etozhewil">Telegram</a></li>
-      <li><a target="_blank" href="https://vk.com/papliouka">VK</a></li>
-    </ul>
-    <hr />
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SASS/SCSS</li>
-      <li>JavaScript</li>
-      <li>TypeScript</li>
-      <li>React</li>
-      <li>Redux</li>
-      <li>Git</li>
-    </ul>
-    <hr>
-    <h2>Experience</h2>
-    <table border="2px">
-      <tr>
-        <td>Sheep Apps</td>
-        <td>Full-stack web developer trainee</td>
-        <td>April 2022 — August 2022</td>
-      </tr>
-      <tr>
-        <td>IT-INCUBATOR</td>
-        <td>React web developer courses</td>
-        <td>September 2021 — January 2022</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>My hobbies</h2>
-    <ol type="I">
-      <li>Sport: basketball</li>
-      <li>Video games</li>
-      <li>Board games</li>
-      <li>Travelling</li>
-    </ol>
-    <hr />
-    <h2>Contact me</h2>
-    <form>
-      <label for="name">Your name</label>
-      <input id="name" type="text" placeholder="Enter your name..." />
-      <br />
-      <label for="email">Your email</label>
-      <input id="email" type="email" placeholder="Enter your email..." />
-      <br />
-      <label for="message">Your message</label>
-      <br />
-      <textarea id="message"></textarea>
-      <br />
-      <input type="submit" />
-    </form>
+          <h4>My social networks</h4>
+          <a target="_blank" href="https://instagram.com/etozhewil"
+            >Instagram</a
+          >
+          |
+          <a target="_blank" href="https://t.me/etozhewil">Telegram</a>
+          |
+          <a target="_blank" href="https://vk.com/papliouka">VK</a>
+        </div>
+      </div>
+      <div class="card bg-red">
+        <h2>My skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SASS/SCSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Git</li>
+        </ul>
+      </div>
+      <div class="card bg-green">
+        <h2>Experience</h2>
+        <table class="table">
+          <tr>
+            <td>Sheep Apps</td>
+            <td>Full-stack web developer trainee</td>
+            <td>April 2022 — August 2022</td>
+          </tr>
+          <tr>
+            <td>IT-INCUBATOR</td>
+            <td>React web developer courses</td>
+            <td>September 2021 — January 2022</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-yellow">
+        <h2>My hobbies</h2>
+        <ol class="list">
+          <li>Sport: basketball</li>
+          <li>Video games</li>
+          <li>Board games</li>
+          <li>Travelling</li>
+        </ol>
+      </div>
+      <div class="contact">
+        <h2>Contact me</h2>
+        <form>
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="Enter your name..." />
+            </div>
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <input class="btn" type="submit" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
